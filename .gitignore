@@ -1,0 +1,19 @@
+# Virtual environments
+**/.venv/
+
+# Braktooth binaries (2.0GB)
+**/modules/tools/braktooth/wdissector/
+
+# Test data and logs
+**/data/
+**/.logs/
+**/*.pklg
+
+# Python cache and build artifacts
+**/__pycache__/
+**/*.pyc
+**/*.egg-info/
+**/build/
+
+# pybtool (if present)
+**/pybtool/

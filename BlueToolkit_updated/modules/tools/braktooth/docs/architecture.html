@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>📐 Architecture | WDissector Fuzzer</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="WDissector Documentation">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="./assets/css/0.styles.001d13a0.css" as="style"><link rel="preload" href="./assets/js/app.7ecfa696.js" as="script"><link rel="preload" href="./assets/js/4.08a88d60.js" as="script"><link rel="preload" href="./assets/js/2.d5d94738.js" as="script"><link rel="preload" href="./assets/js/6.66c8dffe.js" as="script"><link rel="prefetch" href="./assets/js/10.5edaed6d.js"><link rel="prefetch" href="./assets/js/11.b8c9dfd1.js"><link rel="prefetch" href="./assets/js/12.2ea7fef2.js"><link rel="prefetch" href="./assets/js/13.3bc3efd3.js"><link rel="prefetch" href="./assets/js/14.4ddd348a.js"><link rel="prefetch" href="./assets/js/15.83b6893d.js"><link rel="prefetch" href="./assets/js/16.fe0be123.js"><link rel="prefetch" href="./assets/js/17.c4ee532a.js"><link rel="prefetch" href="./assets/js/18.16936339.js"><link rel="prefetch" href="./assets/js/19.fce7675c.js"><link rel="prefetch" href="./assets/js/20.4bab7b12.js"><link rel="prefetch" href="./assets/js/3.6df3d745.js"><link rel="prefetch" href="./assets/js/5.caad9e3c.js"><link rel="prefetch" href="./assets/js/7.43f33b36.js"><link rel="prefetch" href="./assets/js/8.54cc6fb3.js"><link rel="prefetch" href="./assets/js/9.49b281b2.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.001d13a0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="./index.html" class="home-link router-link-active"><img src="./sutd.png" alt="WDissector Fuzzer" class="logo"> <span class="site-name can-hide">WDissector Fuzzer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="./guide.html" class="nav-link"><q-icon name="fas fa-hand-point-right" style="font-size:0.98em;"></q-icon>
+  Getting Started
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Topics" class="dropdown-title"><span class="title"><q-icon name="fas fa-book" style="font-size:0.98em;"></q-icon>
+    Topics</span> <span class="arrow down"></span></button> <button type="button" aria-label="Topics" class="mobile-dropdown-title"><span class="title"><q-icon name="fas fa-book" style="font-size:0.98em;"></q-icon>
+    Topics</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="./stacks.html" class="nav-link"><q-icon name="fas fa-layer-group" style="font-size:0.98em;"></q-icon>
+  Protocol Stacks
+</a></li><li class="dropdown-item"><!----> <a href="./fuzzers.html" class="nav-link"><q-icon name="fas fa-random" style="font-size:0.98em;"></q-icon>
+  Fuzzers
+</a></li><li class="dropdown-item"><!----> <a href="./drivers.html" class="nav-link"><q-icon name="fas fa-microchip" style="font-size:0.98em;"></q-icon>
+  Drivers
+</a></li><li class="dropdown-item"><!----> <a href="./api.html" class="nav-link"><q-icon name="fas fa-cloud" style="font-size:0.98em;"></q-icon>
+  Web API
+</a></li><li class="dropdown-item"><!----> <a href="./exploits.html" class="nav-link"><q-icon name="fas fa-radiation" style="font-size:0.98em;"></q-icon>
+  Exploits
+</a></li><li class="dropdown-item"><!----> <a href="./modules.html" class="nav-link"><q-icon name="fas fa-cube" style="font-size:0.98em;"></q-icon>
+  Modules
+</a></li><li class="dropdown-item"><!----> <a href="./architecture.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><q-icon name="fas fa-drafting-compass" style="font-size:0.98em;"></q-icon>
+  Architecture
+</a></li><li class="dropdown-item"><!----> <a href="./tutorials.html" class="nav-link"><q-icon name="fas fa-graduation-cap" style="font-size:0.98em;"></q-icon>
+  Tutorials
+</a></li><li class="dropdown-item"><!----> <a href="./licenses.html" class="nav-link"><q-icon name="fas fa-copyright" style="font-size:0.98em;"></q-icon>
+  Licenses
+</a></li><li class="dropdown-item"><!----> <a href="./todo.html" class="nav-link"><q-icon name="fas fa-tasks" style="font-size:0.98em;"></q-icon>
+  Todo
+</a></li></ul></div></div><div class="nav-item"><a href="./old_greyhound/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GreyHound
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://gitlab.com/asset-sutd/software/wireless-deep-fuzzer/-/tree/wdissector" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Repository
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="./guide.html" class="nav-link"><q-icon name="fas fa-hand-point-right" style="font-size:0.98em;"></q-icon>
+  Getting Started
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Topics" class="dropdown-title"><span class="title"><q-icon name="fas fa-book" style="font-size:0.98em;"></q-icon>
+    Topics</span> <span class="arrow down"></span></button> <button type="button" aria-label="Topics" class="mobile-dropdown-title"><span class="title"><q-icon name="fas fa-book" style="font-size:0.98em;"></q-icon>
+    Topics</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="./stacks.html" class="nav-link"><q-icon name="fas fa-layer-group" style="font-size:0.98em;"></q-icon>
+  Protocol Stacks
+</a></li><li class="dropdown-item"><!----> <a href="./fuzzers.html" class="nav-link"><q-icon name="fas fa-random" style="font-size:0.98em;"></q-icon>
+  Fuzzers
+</a></li><li class="dropdown-item"><!----> <a href="./drivers.html" class="nav-link"><q-icon name="fas fa-microchip" style="font-size:0.98em;"></q-icon>
+  Drivers
+</a></li><li class="dropdown-item"><!----> <a href="./api.html" class="nav-link"><q-icon name="fas fa-cloud" style="font-size:0.98em;"></q-icon>
+  Web API
+</a></li><li class="dropdown-item"><!----> <a href="./exploits.html" class="nav-link"><q-icon name="fas fa-radiation" style="font-size:0.98em;"></q-icon>
+  Exploits
+</a></li><li class="dropdown-item"><!----> <a href="./modules.html" class="nav-link"><q-icon name="fas fa-cube" style="font-size:0.98em;"></q-icon>
+  Modules
+</a></li><li class="dropdown-item"><!----> <a href="./architecture.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><q-icon name="fas fa-drafting-compass" style="font-size:0.98em;"></q-icon>
+  Architecture
+</a></li><li class="dropdown-item"><!----> <a href="./tutorials.html" class="nav-link"><q-icon name="fas fa-graduation-cap" style="font-size:0.98em;"></q-icon>
+  Tutorials
+</a></li><li class="dropdown-item"><!----> <a href="./licenses.html" class="nav-link"><q-icon name="fas fa-copyright" style="font-size:0.98em;"></q-icon>
+  Licenses
+</a></li><li class="dropdown-item"><!----> <a href="./todo.html" class="nav-link"><q-icon name="fas fa-tasks" style="font-size:0.98em;"></q-icon>
+  Todo
+</a></li></ul></div></div><div class="nav-item"><a href="./old_greyhound/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GreyHound
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://gitlab.com/asset-sutd/software/wireless-deep-fuzzer/-/tree/wdissector" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Repository
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Topics</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="./index.html" aria-current="page" class="sidebar-link">Home</a></li><li><a href="./guide.html" class="sidebar-link">⏩ Quick Start Guide</a></li><li><a href="./stacks.html" class="sidebar-link">✉️ Protocol Stacks</a></li><li><a href="./fuzzers.html" class="sidebar-link">🔀 Fuzzers</a></li><li><a href="./drivers.html" class="sidebar-link">⚙️ Interface Drivers and Hardware Support</a></li><li><a href="./api.html" class="sidebar-link">☁️ Web API</a></li><li><a href="./exploits.html" class="sidebar-link">☢️ Exploits</a></li><li><a href="./modules.html" class="sidebar-link">📦 Modules</a></li><li><a href="./architecture.html" aria-current="page" class="active sidebar-link">📐 Architecture</a></li><li><a href="./tutorials.html" class="sidebar-link">📖 Tutorials</a></li><li><a href="./licenses.html" class="sidebar-link">©️ Licenses</a></li><li><a href="./todo.html" class="sidebar-link">📋 Todo List</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="📐-architecture"><a href="#📐-architecture" class="header-anchor">#</a> 📐 Architecture</h1> <img src="./assets/img/architecture_folders.f696d054.png" alt="architecture_folders" class="custom-center" style="zoom:80%;"></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/23/2022, 10:27:20 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="./modules.html" class="prev">
+        📦 Modules
+      </a></span> <span class="next"><a href="./tutorials.html">
+        📖 Tutorials
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.7ecfa696.js" defer></script><script src="./assets/js/4.08a88d60.js" defer></script><script src="./assets/js/2.d5d94738.js" defer></script><script src="./assets/js/6.66c8dffe.js" defer></script>
+  </body>
+</html>

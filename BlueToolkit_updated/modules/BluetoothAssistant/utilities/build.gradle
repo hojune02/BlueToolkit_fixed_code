@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'xie.morrowind.util'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 24
+
+        consumerProguardFiles "consumer-rules.pro"
+        versionCode 2
+        versionName '1.1'
+        targetSdk 33
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildToolsVersion '34.0.0'
+    ndkVersion '25.2.9519653'
+}
+
+dependencies {
+    compileOnly 'androidx.appcompat:appcompat:1.6.1'
+    compileOnly 'androidx.preference:preference:1.1.1'
+}
